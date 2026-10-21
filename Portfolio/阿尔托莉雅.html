@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber - 阿尔托莉雅</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url('https://p3-flow-image-sign.byteimg.com/tos-cn-i-a9rns2rl98/30144013119e40489100201110442311~tplv-a9rns2rl98-image.image') center/cover no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: min(90%, 700px);
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            padding: 40px;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 16px;
+            color: #f0f8ff;
+        }
+
+        .subtitle {
+            font-size:1.2rem;
+            color:#e6f0ff;
+            margin-bottom:24px;
+        }
+
+        p {
+            font-size:1.05rem;
+            line-height:1.8;
+            margin-bottom:14px;
+        }
+
+        .info-line {
+            margin-top:22px;
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+        .tag{
+            padding:6px 14px;
+            background:rgba(40,90,180,0.35);
+            border-radius:30px;
+            border:1px solid rgba(255,255,255,0.25);
+        }
+
+        @keyframes fadeIn {
+            from{
+                opacity:0;
+                transform: translateY(30px);
+            }
+            to{
+                opacity:1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:600px){
+            h1{font-size:2rem;}
+            .card{padding:26px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Saber / 阿尔托莉雅·潘德拉贡</h1>
+        <div class="subtitle">Fate / Grand Order</div>
+        <p>
+            不列颠的亚瑟王，持有圣剑Excalibur，以Saber职阶被召唤。
+            为守护故国而背负沉重理想，外表清冷，内心坚守骑士道。
+        </p>
+        <p>
+            这张图中她静坐在林间湖畔，手捧纯白百合，剑伴身侧。阳光穿过枝叶落在金发上，褪去战场锋芒，只剩温柔静谧。
+        </p>
+        <div class="info-line">
+            <span class="tag">职阶：Saber</span>
+            <span class="tag">宝具：誓约胜利之剑</span>
+            <span class="tag">身份：亚瑟王</span>
+        </div>
+    </div>
+</body>
+</html>
